@@ -118,8 +118,10 @@ extraEnvVarsSecret: {}
   #   key: secret-key
 
 # default upstream DNS servers to use
-DNS1: "8.8.8.8"
-DNS2: "8.8.4.4"
+DNS1: "9.9.9.9"
+DNS2: "149.112.112.112"
+DNS3: "1.1.1.1"
+DNS4: "1.0.0.1"
 
 antiaff:
   # set to true to enable antiaffinity (example: 2 pihole DNS in the same cluster)
