@@ -20,14 +20,6 @@ spec:
   externalTrafficPolicy: {{ .Values.serviceTCP.externalTrafficPolicy }}
   {{- end }}
   ports:
-    - port: {{ .Values.webHttp }}
-      targetPort: http
-      protocol: TCP
-      name: http
-    - port: {{ .Values.webHttps }}
-      targetPort: https
-      protocol: TCP
-      name: https
     - port: 53
       targetPort: dns
       protocol: TCP
