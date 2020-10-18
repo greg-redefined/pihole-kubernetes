@@ -143,14 +143,6 @@ spec:
           - name: 'DNS2'
             value: {{ .Values.DNS2 }}
           {{- end }}
-          {{- if .Values.DNS3 }}
-          - name: 'DNS3'
-            value: {{ .Values.DNS3 }}
-          {{- end }}
-          {{- if .Values.DNS4 }}
-          - name: 'DNS4'
-            value: {{ .Values.DNS4 }}
-          {{- end }}
          {{- end }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
